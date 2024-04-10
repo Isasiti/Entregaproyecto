@@ -1,7 +1,7 @@
 import random
 
-class Usuario:
-    def __init__(self):
+class Usuario():
+    def init(self):
         self.usuarios = []
         self.reservas_palco_vip = 0
         self.reservas_entrada_normal = 0
@@ -111,9 +111,8 @@ class acceder_sistema:
         print("¡Gracias por su feedback!")
     def ingresar_como_personal(self):
         usuario = input("Ingrese el usuario: ")
-        contrasena = input("Ingrese la contraseña: ")
-
-        if usuario == "isasiti" and contrasena == "mimama":
+        contraseña = input("Ingrese la contraseña: ")
+        if usuario == "isasiti" and contraseña == "mimama":
             print("Acceso como personal concedido.")
             self.ver_reportes_y_codigos()
             self.ver_bebida_mas_pedida()
